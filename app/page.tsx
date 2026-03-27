@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "../components/Button";
 export default function Home() {
   return (
     <div className="h-screen flex justify-center items-center">
@@ -10,16 +11,11 @@ export default function Home() {
         <div>I like CompSci and Vball</div>
         <div>To be continued</div>
         <div className="flex gap-2 justify-end">
-          <Link
-            className="border p-2 rounded-xl bg-white text-black"
-            href={"https://github.com/haydakiwi"}
-          >
-            github
-          </Link>
-
-          <button className="border p-2 rounded-xl bg-white text-black">
-            tbd
-          </button>
+          <Button text="GitHub" link="https://github.com/haydakiwi" />
+          <Button
+            text="LinkedIn"
+            link="https://www.linkedin.com/in/hayden-lin-572934388/"
+          />
         </div>
       </div>
     </div>
